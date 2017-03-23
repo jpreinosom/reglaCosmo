@@ -1,5 +1,5 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="baseCompraNacionalFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmopĺas.comunicacion.documento.*, cosmplas.comunicacion.nacional.firmar.*">
+  <kbase name="baseCompraNacionalFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmopĺas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.firmar.*">
     <ksession name="sessionNacionalFirma" type="stateless" default="false" clockType="realtime"/>
   </kbase>
   <kbase name="baseCompraNacional" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.grabar.*">
