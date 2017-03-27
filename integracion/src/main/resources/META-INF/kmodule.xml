@@ -14,4 +14,7 @@
   <kbase name="baseAjusteBloqueo" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.ajustebloqueo.erp.*">
     <ksession name="sessionAjusteBloqueo" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.firma.nvl.*">
+    <ksession name="sessionVentaFirma" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
 </kmodule>
