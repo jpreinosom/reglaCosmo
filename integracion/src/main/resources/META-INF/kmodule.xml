@@ -23,6 +23,9 @@
   <kbase name="baseVentaPasoWMSActivable" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.pasowms.activables.*">
     <ksession name="sessionPasoWMSActivables" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="basePasoWMS" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.pasowms.generica.*">
+    <ksession name="sessionPasoWMS" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseAjusteBloqueo" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.ajustebloqueo.erp.*">
     <ksession name="sessionAjusteBloqueo" type="stateless" default="false" clockType="realtime"/>
   </kbase>
