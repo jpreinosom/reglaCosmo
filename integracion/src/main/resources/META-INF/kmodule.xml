@@ -17,6 +17,9 @@
   <kbase name="baseInternacionalGrabar" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.internacional.grabar.*">
     <ksession name="sessionInternacionalGrabar" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseNotaCreditoWMS" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.wms.*">
+    <ksession name="sessionNotaCredito" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseAjusteBloqueo" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.ajustebloqueo.erp.*">
     <ksession name="sessionAjusteBloqueo" type="stateless" default="false" clockType="realtime"/>
   </kbase>
