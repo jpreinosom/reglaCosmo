@@ -1,2 +1,26 @@
 package cosmoplas.comunicacion.util;
 
+import cosmoplas.comunicacion.documento.*;
+import java.util.Date;
+import java.lang.Integer;
+import java.lang.String;
+
+//from row number: 1
+rule "Row 1 calculoFecha"
+	no-loop true
+	dialect "mvel"
+	when
+		f1 : Documento( fechaDespacho != null , fechaHoy != null )
+	then		                //f1.setDiffCantVenta(f1.getDisponible() - f1.getCantidadVenta());		//System.out.println("diferencia cantidad " + f1.getDiffCantVenta());
+		Date fechaDespacho = f1.getFechaDespacho();
+		Date fechaHoy = f1.getFechaHoy();
+				long fechaInicialMs = fechaHoy.getTime();
+				long fechaFinalMs = fechaDespacho.getTime();
+				long diferencia = fechaFinalMs - fechaInicialMs;
+				double dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+				f1.setDiferenciaFecha((int) dias);
+		                //f1.setDiffCantVenta(f1.getDisponible() - f1.getCantidadVenta());
+		//System.out.println("diferencia cantidad " + f1.getDiffCantVenta());
+				System.out.println(f1.getDiferenciaFecha());
+		update(f1);
+end
