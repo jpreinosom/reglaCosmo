@@ -1,2 +1,16 @@
 package cosmoplas.comunicacion.pasowms.generica;
 
+import cosmoplas.comunicacion.Documento;
+
+//from row number: 1
+rule "Row 1 calculoPorcentajeReserva"
+	no-loop true
+	dialect "mvel"
+	when
+		f1 : Documento( montoVenta != null , montoReservado != null )
+	then
+		f1.setRespBus( true );
+		f1.setCalculoWMS((f1.getMontoReservado() * 100) / f1.getMontoVenta());
+		System.out.println(f1.getCalculoWMS());
+		update(f1);
+end
