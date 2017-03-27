@@ -2,6 +2,9 @@
   <kbase name="baseCompraNacionalFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmopĺas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.firmar.*">
     <ksession name="sessionNacionalFirma" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseNotaCreditoSucusal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.sucursal.*">
+    <ksession name="sessionNotaCreditoSucursal" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseFacturacion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.facturacion.*">
     <ksession name="sessionFacturacion" type="stateless" default="false" clockType="realtime"/>
   </kbase>
