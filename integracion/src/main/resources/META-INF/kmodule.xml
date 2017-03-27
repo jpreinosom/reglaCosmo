@@ -1,24 +1,6 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="baseCompraNacionalFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmopĺas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.firmar.*">
-    <ksession name="sessionNacionalFirma" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
   <kbase name="baseNotaCreditoSucusal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.sucursal.*">
     <ksession name="sessionNotaCreditoSucursal" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseFacturacion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.facturacion.*">
-    <ksession name="sessionFacturacion" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseVentaGenerica" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.genericoventa.*">
-    <ksession name="sessionGenericoVenta" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseCompraNacional" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.grabar.*">
-    <ksession name="sessionNacional" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseInternacionalGrabar" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.internacional.grabar.*">
-    <ksession name="sessionInternacionalGrabar" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseNotaCreditoWMS" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.wms.*">
-    <ksession name="sessionNotaCredito" type="stateless" default="false" clockType="realtime"/>
   </kbase>
   <kbase name="baseVentaPasoWMSActivable" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.pasowms.activables.*">
     <ksession name="sessionPasoWMSActivables" type="stateless" default="false" clockType="realtime"/>
@@ -34,5 +16,26 @@
   </kbase>
   <kbase name="baseVentaFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.firma.nvl.*">
     <ksession name="sessionVentaFirma" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseCompraNacionalFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmopĺas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.firmar.*">
+    <ksession name="sessionNacionalFirma" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseTraspasoEneaNov" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.traspasosucursal.*">
+    <ksession name="sessionTraspasoSucursal" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseFacturacion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.facturacion.*">
+    <ksession name="sessionFacturacion" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaGenerica" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.genericoventa.*">
+    <ksession name="sessionGenericoVenta" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseCompraNacional" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.grabar.*">
+    <ksession name="sessionNacional" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseInternacionalGrabar" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.internacional.grabar.*">
+    <ksession name="sessionInternacionalGrabar" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseNotaCreditoWMS" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.wms.*">
+    <ksession name="sessionNotaCredito" type="stateless" default="false" clockType="realtime"/>
   </kbase>
 </kmodule>
