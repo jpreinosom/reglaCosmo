@@ -1,6 +1,6 @@
 package cosmoplas.comunicacion.pasowms.generica;
 
-import cosmoplas.comunicacion.Documento;
+import cosmoplas.comunicacion.documento.Documento;
 
 //from row number: 1
 rule "Row 1 calculoPorcentajeReserva"
