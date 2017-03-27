@@ -5,6 +5,9 @@
   <kbase name="baseFacturacion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.facturacion.*">
     <ksession name="sessionFacturacion" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaGenerica" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.genericoventa.*">
+    <ksession name="sessionGenericoVenta" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseCompraNacional" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.grabar.*">
     <ksession name="sessionNacional" type="stateless" default="false" clockType="realtime"/>
   </kbase>
