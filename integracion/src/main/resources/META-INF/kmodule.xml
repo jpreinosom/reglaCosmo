@@ -2,6 +2,9 @@
   <kbase name="baseNotaCreditoSucusal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.sucursal.*">
     <ksession name="sessionNotaCreditoSucursal" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaREDP" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.util.*, cosmoplas.comunicacion.venta.nvl.redp.*">
+    <ksession name="sessionVentaReservaExtendidaDP" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseVentaPasoWMSActivable" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.pasowms.activables.*">
     <ksession name="sessionPasoWMSActivables" type="stateless" default="false" clockType="realtime"/>
   </kbase>
