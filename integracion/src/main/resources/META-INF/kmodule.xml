@@ -1,21 +1,9 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="baseNotaCreditoSucusal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.sucursal.*">
-    <ksession name="sessionNotaCreditoSucursal" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseVentaREDP" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.util.*, cosmoplas.comunicacion.venta.nvl.redp.*">
-    <ksession name="sessionVentaReservaExtendidaDP" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
   <kbase name="baseVentaPasoWMSActivable" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.pasowms.activables.*">
     <ksession name="sessionPasoWMSActivables" type="stateless" default="false" clockType="realtime"/>
   </kbase>
   <kbase name="baseVentaReserva" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.reserva.generica.*">
     <ksession name="sessionVentaReserva" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseVentaFacturaInmediata" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.fidp.*">
-    <ksession name="sessionVentaFIDP" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseVentaPedidoCompleto" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.pedidocompleto.*, cosmoplas.comunicacion.util.*">
-    <ksession name="sessionVentaPedidoCompleto" type="stateless" default="false" clockType="realtime"/>
   </kbase>
   <kbase name="basePasoWMS" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.pasowms.generica.*">
     <ksession name="sessionPasoWMS" type="stateless" default="false" clockType="realtime"/>
@@ -32,14 +20,41 @@
   <kbase name="baseTraspasoEneaNov" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.traspasosucursal.*">
     <ksession name="sessionTraspasoSucursal" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaPedidoNormal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.pedidonormal.*">
+    <ksession name="sessionVentaPedidoNormal" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaMuestra" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.muestra.*">
+    <ksession name="sessionMuestra" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaRutaRegion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.rutaregion.*">
+    <ksession name="sessionVentaRutaRegion" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaCableDimensionado" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.*">
+    <ksession name="sessionCableDimensionado" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaGrandesSuperficies" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.grandessuperficies.*">
+    <ksession name="sessionGrandesSuperficies" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseNotaCreditoSucusal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.sucursal.*">
+    <ksession name="sessionNotaCreditoSucursal" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaREDP" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.util.*, cosmoplas.comunicacion.venta.nvl.redp.*">
+    <ksession name="sessionVentaReservaExtendidaDP" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaFacturaInmediata" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.fidp.*">
+    <ksession name="sessionVentaFIDP" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseVentaPedidoCompleto" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.pedidocompleto.*, cosmoplas.comunicacion.util.*">
+    <ksession name="sessionVentaPedidoCompleto" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseProyectoFIDP" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.proyecto.fidp.*, cosmoplas.comunicacion.util.*">
+    <ksession name="sessionProyectoFacturaInmediataDP" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseFacturacion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.facturacion.*">
     <ksession name="sessionFacturacion" type="stateless" default="false" clockType="realtime"/>
   </kbase>
   <kbase name="baseVentaGenerica" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.genericoventa.*">
     <ksession name="sessionGenericoVenta" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseVentaPedidoNormal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.pedidonormal.*">
-    <ksession name="sessionVentaPedidoNormal" type="stateless" default="false" clockType="realtime"/>
   </kbase>
   <kbase name="baseCompraNacional" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.grabar.*">
     <ksession name="sessionNacional" type="stateless" default="false" clockType="realtime"/>
@@ -53,22 +68,10 @@
   <kbase name="baseNotaCreditoWMS" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.notacredito.wms.*">
     <ksession name="sessionNotaCredito" type="stateless" default="false" clockType="realtime"/>
   </kbase>
-  <kbase name="baseVentaMuestra" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.muestra.*">
-    <ksession name="sessionMuestra" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
   <kbase name="baseVentaProyecto" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.proyecto.*">
     <ksession name="sessionVentaProyecto" type="stateless" default="false" clockType="realtime"/>
   </kbase>
-  <kbase name="baseVentaRutaRegion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.rutaregion.*">
-    <ksession name="sessionVentaRutaRegion" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
   <kbase name="baseVentaEntregaProgramada" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.entregaprogramada.*">
     <ksession name="sessionVentaEntregaProgramada" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseVentaCableDimensionado" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.*">
-    <ksession name="sessionCableDimensionado" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="baseVentaGrandesSuperficies" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.grandessuperficies.*">
-    <ksession name="sessionGrandesSuperficies" type="stateless" default="false" clockType="realtime"/>
   </kbase>
 </kmodule>
