@@ -29,6 +29,9 @@
   <kbase name="baseVentaMuestra" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.muestra.*">
     <ksession name="sessionMuestra" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseProyectoREDP" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.util.*, cosmoplas.comunicacion.venta.proyecto.redp.*">
+    <ksession name="sessionProyectoReservaExtendidaDP" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseVentaRutaRegion" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.rutaregion.*">
     <ksession name="sessionVentaRutaRegion" type="stateless" default="false" clockType="realtime"/>
   </kbase>
