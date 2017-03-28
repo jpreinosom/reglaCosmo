@@ -11,6 +11,9 @@
   <kbase name="baseVentaFacturaInmediata" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.fidp.*">
     <ksession name="sessionVentaFIDP" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaPedidoCompleto" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.pedidocompleto.*">
+    <ksession name="sessionVentaPedidoCompleto" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="basePasoWMS" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.pasowms.generica.*">
     <ksession name="sessionPasoWMS" type="stateless" default="false" clockType="realtime"/>
   </kbase>
