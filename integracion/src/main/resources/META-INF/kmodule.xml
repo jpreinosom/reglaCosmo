@@ -50,6 +50,9 @@
   <kbase name="baseVentaREDP" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.util.*, cosmoplas.comunicacion.venta.nvl.redp.*">
     <ksession name="sessionVentaReservaExtendidaDP" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseTraspasoEnea" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.traspaso.traspasoeneasuc.*">
+    <ksession name="sessionTraspasoSucursal" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseVentaFacturaInmediata" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.fidp.*">
     <ksession name="sessionVentaFIDP" type="stateless" default="false" clockType="realtime"/>
   </kbase>
