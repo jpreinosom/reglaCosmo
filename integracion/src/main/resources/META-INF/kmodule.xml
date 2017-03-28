@@ -50,6 +50,9 @@
   <kbase name="baseVentaMuestra" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.muestra.*">
     <ksession name="sessionMuestra" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaProyecto" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.proyecto.*">
+    <ksession name="sessionVentaProyecto" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseVentaEntregaProgramada" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.entregaprogramada.*">
     <ksession name="sessionVentaEntregaProgramada" type="stateless" default="false" clockType="realtime"/>
   </kbase>
