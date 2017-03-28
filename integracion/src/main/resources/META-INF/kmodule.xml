@@ -14,6 +14,9 @@
   <kbase name="baseVentaFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.firma.nvl.*">
     <ksession name="sessionVentaFirma" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseProyectoProyecto" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.util.*, cosmoplas.comunicacion.venta.proyecto.*">
+    <ksession name="sessionProyectoProyecto" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseCompraNacionalFirma" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmopĺas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.firmar.*">
     <ksession name="sessionNacionalFirma" type="stateless" default="false" clockType="realtime"/>
   </kbase>
