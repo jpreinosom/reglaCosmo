@@ -44,6 +44,9 @@
   <kbase name="baseCompraNacional" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.grabar.*">
     <ksession name="sessionNacional" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaRetiraCliente" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.retiracliente.*">
+    <ksession name="sessionVentaRetiraCliente" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseInternacionalGrabar" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.internacional.grabar.*">
     <ksession name="sessionInternacionalGrabar" type="stateless" default="false" clockType="realtime"/>
   </kbase>
