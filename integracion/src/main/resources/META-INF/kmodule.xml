@@ -26,6 +26,9 @@
   <kbase name="baseVentaPedidoNormal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.pedidonormal.*">
     <ksession name="sessionVentaPedidoNormal" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseSolTEnea" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.traspaso.solicitudtenea.*">
+    <ksession name="sessionTraspasoEnea" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseVentaMuestra" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.muestra.*">
     <ksession name="sessionMuestra" type="stateless" default="false" clockType="realtime"/>
   </kbase>
