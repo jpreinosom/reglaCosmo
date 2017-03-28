@@ -35,6 +35,9 @@
   <kbase name="baseVentaGenerica" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.genericoventa.*">
     <ksession name="sessionGenericoVenta" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseVentaPedidoNormal" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.venta.nvl.pedidonormal.*">
+    <ksession name="sessionVentaPedidoNormal" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="baseCompraNacional" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.documento.*, cosmoplas.comunicacion.nacional.grabar.*">
     <ksession name="sessionNacional" type="stateless" default="false" clockType="realtime"/>
   </kbase>
